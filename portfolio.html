@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<link rel="stylesheet" href="portfolio.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="navbar">
+
+  <!-- LOGO -->
+  <a href="index.html" class="logo">
+  <img src="images/logo.png" alt="logo">
+  
+</a>
+
+  <!-- LINKS -->
+  <nav>
+    <ul class="nav-links">
+
+      <li><a href="index.html">Home</a></li>
+
+      <!-- DROPDOWN -->
+      <li class="dropdown">
+        <a href="#">Furniture Categories ▾</a>
+
+        <ul class="menu level-1">
+
+          <li>
+            <a href="#">Living Room ▸</a>
+
+            <ul class="menu level-2">
+              <li>
+                <a href="#">Sofas ▸</a>
+
+                <ul class="menu level-3">
+                  <li>
+                    <a href="#">Leather Sofa ▸</a>
+
+                    <ul class="menu level-4">
+                      <li><a href="#">2 Seater</a></li>
+                      <li><a href="#">3 Seater</a></li>
+                      <li><a href="#">L Shape</a></li>
+                    </ul>
+
+                  </li>
+                  <li><a href="#">Fabric Sofa</a></li>
+                </ul>
+
+              </li>
+              <li><a href="#">Center Table</a></li>
+            </ul>
+
+          </li>
+
+          <li><a href="#">Bedroom</a></li>
+
+        </ul>
+      </li>
+
+      <li><a href="custom-order.html" target="_blank" class="active">Custom Order</a></li>
+      <li><a href="track.html">Track Order</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+
+    </ul>
+  </nav>
+
+  <!-- RIGHT -->
+  <div class="nav-right">
+    <span id="user-name" style="margin-left:10px;"></span>
+
+    <a href="wishlist.html">
+  <i class="fa-regular fa-heart"></i>
+</a>
+<div class="wishlist-icon" onclick="toggleWishlist(this, 'Wooden Bed', 25000, 'images/bed.jpg')"></div>
+    <div class="cart-icon">
+      <a href="cart.html">
+  <i class="fa-solid fa-cart-shopping"></i>
+</a>
+      <span id="cart-count">0</span>
+    </div>
+
+    <a href="login.html">
+  <button class="auth-btn">
+    Login <span>/</span> Signup
+  </button>
+</a>
+
+  </div>
+
+</header>
+<section class="portfolio">
+
+  <!-- TITLE -->
+  <div class="section-title">
+    <h2>Our Portfolio</h2>
+    <p>Explore Our Custom Furniture Creations</p>
+  </div>
+
+  <!-- TOP CARDS -->
+  <div class="portfolio-top">
+
+    <div class="top-card">Living Spaces</div>
+    <div class="top-card">Dining Areas</div>
+    <div class="top-card">Workspaces</div>
+
+  </div>
+
+  <!-- FILTER -->
+  <div class="filter">
+    <button class="active">All</button>
+    <button>Modern</button>
+    <button>Rustic</button>
+    <button>Minimalist</button>
+  </div>
+
+  <!-- GRID -->
+  <div class="portfolio-grid">
+
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+
+  </div>
+
+</section>
+
+</body>
+</html>
